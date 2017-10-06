@@ -25,3 +25,15 @@ Puedes ejecutar el programa mediante el siguiente comando:
 java Ejercicio1
 ```
 
+##Qué se aprende en Programación
+
+* Lenguaje de Java
+* Comandos de Linux
+* Git y GitHub
+
+##Bibliografía
+
+<img src="imagenes/aprendejava.jpg" width="240px">
+
+[Aprende Java con ejercicios] (https://leanpub.com/gitygithub)
+
