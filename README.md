@@ -25,13 +25,13 @@ Puedes ejecutar el programa mediante el siguiente comando:
 java Ejercicio1
 ```
 
-##Qué se aprende en Programación
+## Qué se aprende en Programación
 
 * Lenguaje de Java
 * Comandos de Linux
 * Git y GitHub
 
-##Bibliografía
+## Bibliografía
 
 <img src="imagenes/hero.jpeg" width="240px">
 
