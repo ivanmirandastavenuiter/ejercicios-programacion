@@ -33,7 +33,7 @@ java Ejercicio1
 
 ##Bibliografía
 
-<img src="imagenes/aprendejava.jpg" width="240px">
+<img src="imagenes/hero.jpeg" width="240px">
 
 [Aprende Java con ejercicios] (https://leanpub.com/gitygithub)
 
