@@ -27,7 +27,7 @@ java Ejercicio1
 
 ## Qué se aprende en Programación
 
-*  :coffee: Lenguaje de Java
+*  :coffee: Lenguaje Java
 *  :penguin: Comandos de Linux
 *  :octocat: Git y GitHub
 
