@@ -35,5 +35,7 @@ java Ejercicio1
 
 <img src="imagenes/hero.jpeg" width="240px">
 
-[Aprende Java con ejercicios] (https://leanpub.com/gitygithub)
+[Git y GitHub](https://leanpub.com/gitygithub)
+
+[Aprende Java con ejercicios](https://leanpub.com/aprendejava)
 
