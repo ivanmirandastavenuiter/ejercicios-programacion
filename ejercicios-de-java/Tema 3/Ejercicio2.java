@@ -10,6 +10,9 @@ public class Ejercicio2 {
     String cantidad = System.console().readLine();
     double euros = Double.parseDouble(cantidad);
     
+    //Si quiero que me de las pesetas sin decimales se pone así:
+    // int pesetas = (int)(euros*166.376);
+    
     System.out.print("La cantidad en pesetas es " + (double)euros * 166.376);
   }
 }
