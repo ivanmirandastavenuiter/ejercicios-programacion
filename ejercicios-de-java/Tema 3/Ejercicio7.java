@@ -15,6 +15,10 @@ public class Ejercicio7 {
     System.out.print("Introduce el precio del tercer artículo: ");
     double tercerProducto = Double.parseDouble(System.console().readLine());
     
+    /*Se pueden incluir salidas formateadas del siguiente modo:
+    System.out.printf("Texto %20s %8.2f", datos, datos);
+    */
+    
     System.out.println("El precio de los artículos sin el IVA aplicado es " + (primerProducto + segundoProducto + tercerProducto));
     System.out.println("El precio total con el IVA es de " + (primerProducto + segundoProducto + tercerProducto) * 1.21);
   }
