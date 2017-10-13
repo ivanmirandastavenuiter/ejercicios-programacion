@@ -17,6 +17,8 @@ public class Ejercicio7 {
     
     /*Se pueden incluir salidas formateadas del siguiente modo:
     System.out.printf("Texto %20s %8.2f", datos, datos);
+    Cada porcentaje a la izquierda se corresponde con los espacios
+    situados entre las comas. 
     */
     
     System.out.println("El precio de los artículos sin el IVA aplicado es " + (primerProducto + segundoProducto + tercerProducto));
