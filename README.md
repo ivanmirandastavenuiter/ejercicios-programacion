@@ -2,27 +2,20 @@
 
 Repositorio con los ejercicios de la asignatura **Programación** de **1º DAW (Desarrollo de Aplicaciones Web)** del IES Campanillas.
 
-## Ejemplo de un programa en Java
+## Recordatorio de cómo hacer un *fork*
 
-A continuación se muestra el programa *"Hola Mundo"* en Java.
+Mostramos los pasos a seguir para hacer un *fork*
 
-```java
-/**
-* Ejercicio 1
-*
-* @author Luis J. Sánchez
-*/
-public class Ejercicio1 { // Clase principal
-	public static void main(String[] args) {
-		System.out.println("Iván Miranda Stavenuiter");
-	}
-}
-```
+* Ve al repositorio del cual quieras obtener algún directorio o archivo
+* En la esquina superior derecha pulsa el botón que pone *fork*
+* Una vez en tu repositorio, ve al botón verde *Clone or download*
+y pincha en *Copy to clipboard*
+* Lo siguiente es clonar el directorio:
 
-Puedes ejecutar el programa mediante el siguiente comando: 
+Ve al directorio raíz donde quieras colocarlo y escribe el siguiente comando:
 
 ```console
-java Ejercicio1
+git clone https://github.com/ivanmirandastavenuiter/ejercicios-programacion.git
 ```
 
 ## Qué se aprende en Programación
@@ -34,6 +27,7 @@ java Ejercicio1
 ## Bibliografía
 
 <img src="imagenes/hero.jpeg" width="240px">
+<img src="imagenes/aprende.jpeg" width="240px">
 
 [Git y GitHub](https://leanpub.com/gitygithub)
 
