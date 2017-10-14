@@ -23,3 +23,5 @@ public class Ejercicio12 {
     System.out.print("Para sacar un " + notaFinal + " tienes que obtener una nota de " + segundo + " en el segundo examen");
   }
 }
+
+
