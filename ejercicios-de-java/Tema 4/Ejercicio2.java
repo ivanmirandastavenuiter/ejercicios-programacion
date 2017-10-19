@@ -22,5 +22,8 @@ public class Ejercicio2 {
     if ((hora >= 0) && (hora <=5)) {
       System.out.println("Buenas noches");
     }
+    if ((hora < 0) || (hora >= 24)) {
+      System.out.println("Has introducido una hora incorrecta");
+    }
   }
 }
