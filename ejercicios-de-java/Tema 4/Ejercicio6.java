@@ -2,6 +2,12 @@
 * Ejercicio6
 * Si usamos System.console().readLine(); más .toLowercase(), se pasa
 * todo a minúscula.
+* 
+* Si hay un dato que es una constante, debe reflejarse.
+* 
+* Se puede poner un condicional para el caso en el que se introduzca
+* una altura en negativo.
+* 
 * @author Iván Miranda Stavenuiter
 */
 

@@ -2,6 +2,10 @@
 * Ejercicio5
 * Si usamos System.console().readLine(); más .toLowercase(), se pasa
 * todo a minúscula.
+* 
+* Si la operación da lugar a resultados que no se pueden calcular, hay 
+* que poner un if explicándolo en el caso de que se produzca ese fallo.
+* 
 * @author Iván Miranda Stavenuiter
 */
 

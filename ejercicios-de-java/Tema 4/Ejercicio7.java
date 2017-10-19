@@ -2,6 +2,9 @@
 * Ejercicio7
 * Si usamos System.console().readLine(); más .toLowercase(), se pasa
 * todo a minúscula.
+* 
+* Se pueden poner if de nuevo para los datos incorrectos. 
+* 
 * @author Iván Miranda Stavenuiter
 */
 
