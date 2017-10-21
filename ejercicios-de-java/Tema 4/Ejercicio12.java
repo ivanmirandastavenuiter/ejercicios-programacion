@@ -1,6 +1,11 @@
 /**
 * Ejercicio12
 * 
+* Si ponemos delante de una variable ++ o bien detrás igualmente, lo que
+* estamos haciendo es incrementar en una unidad el valor de x. Si está 
+* delante se hace primero el incremento. Si se pone detrás primero se aplica
+* el valor de la variable y luego el de ++.
+* 
 * @author Iván Miranda Stavenuiter
 */
 
