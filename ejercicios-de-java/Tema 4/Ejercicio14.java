@@ -1,6 +1,24 @@
 /**
 * Ejercicio14
 * 
+* Para ver si un número es par se divide entre dos y se calcula si el resto
+* es 0 o no. Esto se puede hacer con el módulo (%). Se iguala a cero y si es así,
+* cumple con la condición y por tanto, es par.
+* 
+* Lo mismo con 5.
+* 
+* ESTO CAE EN EL EXAMEN SEGURO.
+* 
+* Los if no son excluyentes si están separados. Si es else if sí que son 
+* excluyentes. Esto se puede ver con notas de examen, por ejemplo:
+* 
+* if (nota < 5) {
+*   "Insuficiente"
+* } else if (nota < 6) {
+* "Suficiente"
+* } luego menor que 7, etc.
+*
+* 
 * @author Iván Miranda Stavenuiter
 */
 

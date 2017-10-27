@@ -1,6 +1,9 @@
 /**
 * Ejercicio17
 * 
+* Math.abs(x) = valor absoluto de un número. Si es negativo, lo pone positivo.
+* Si es positivo, lo pone igual. 
+* 
 * @author Iván Miranda Stavenuiter
 */
 

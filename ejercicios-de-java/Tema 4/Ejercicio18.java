@@ -1,6 +1,12 @@
 /**
 * Ejercicio18
 * 
+* Aquí por ejemplo todas las cifras a partir de 10 pueden englobarse dentro
+* de else if encaddenados con el if principal. 
+* 
+* También un else solo al final diciendo que solo se piden 5 cifras en caso
+* de que se introduzcan más. 
+* 
 * @author Iván Miranda Stavenuiter
 */
 
@@ -15,7 +21,7 @@ public class Ejercicio18 {
       cifra = num;
     }
     
-    if ((num >=10) && (num < 100)) {
+    if ((num >=10) && (num < 100)) {g
       cifra = num / 10;
     }
     

@@ -1,6 +1,29 @@
 /**
 * Ejercicio13
 * 
+* Este ejercicio lo hace un compañero con if y con else. Se puede especificar
+* el contenido de los else.
+* 
+* Si yo pido tres números a, b y c. 
+* 
+* Para intercambiar valores: a es 5 y b es 7.
+* 
+* Tienes que usar una variable auxiliar. La puedo llamar aux.
+* 
+* Aux = 0
+* 
+* Guardo a: aux = a. Ahora aux vale 5.
+* Ahora sí que meto en a lo que tiene b. a = b. Ahora tienes un siete.
+* 
+* Y por último b = aux. Ya tienes los valores intercambiados.
+* 
+* Volvemos a los tres números.
+* 
+* Suponemos 20, 10 y 6. Se puede hacer en tres pasos. Se compara primero con segundo,
+* segundo con tercero y primero con segundo de nuevo. 
+* 
+* Esta es la solución que propone Luis. ES CON INTERCAMBIO DE VALORES.
+* 
 * @author Iván Miranda Stavenuiter
 */
 
