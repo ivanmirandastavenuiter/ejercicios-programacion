@@ -4,6 +4,9 @@
 * PREGUNTAR A LUIS CÓMO MODIFICAR EL TEXTO DEPENDIENDO DE LOS INTENTOS
 * QUE QUEDEN
 * 
+* PREGUNTAR TAMBIÉN POR QUÉ EN LA SOLUCIÓN INICIALIZA LA BOOLEAN ACERTADO
+* EN FALSE
+* 
 * @author Iván Miranda Stavenuiter
 */
 
@@ -32,5 +35,6 @@ public class Ejercicio7 {
     } while ((intento < 4) && (com != c));
   }
 }
+ 
 
     
