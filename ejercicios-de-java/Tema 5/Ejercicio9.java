@@ -1,6 +1,11 @@
 /**
 * Ejercicio9
 * 
+* NOTA A RECORDAR: Si estableces el println de pedir el número al principio
+* fuera del do, la primera cifra que indiques se va a quedar en bucle
+* repitiéndose ya que has excluido la pregunta de esa iteración. Es por 
+* eso por lo que tiene que ir dentro.
+* 
 * @author Iván Miranda Stavenuiter
 */
 
