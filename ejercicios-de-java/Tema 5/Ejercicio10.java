@@ -6,6 +6,16 @@
 * repitiéndose ya que has excluido la pregunta de esa iteración. Es por 
 * eso por lo que tiene que ir dentro.
 * 
+* Otra manera es introducir un if que ponga num introducido mayor que 0
+* y que sume los dígitos y sume uno al contador, con un while número mayor
+* que 0.
+* 
+* ¿Pero qué pasa si directamente ponemos el negativo?
+* Poniendo un if contador > 0 y mostrar un mensaje de error en un else
+* que diga un mensajito. 
+* 
+* 
+* 
 * @author Iván Miranda Stavenuiter
 */
 
@@ -26,7 +36,7 @@ public class Ejercicio10 {
       total = total + num;
     } while (num > 0);
       System.out.println("Has introducido " + (contador - 1) + " números positivos.");
-      System.out.println("La media de la suma de dichos números es " + ((total - num)/ 2) + ".");
+      System.out.println("La media de la suma de dichos números es " + ((total - num)/ (contador -1)) + ".");
     }
   }
       
