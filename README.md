@@ -50,7 +50,8 @@ public class Ejercicio19 {
     } while (altura > 0);
   }
 }
-
+```
+**Recordad que para poner comentarios de código tenéis que introducir las tres comillas a principio y fin del tramo**
 
 ## Qué se aprende en Programación
 
