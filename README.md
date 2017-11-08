@@ -18,26 +18,37 @@ Ve al directorio raíz donde quieras colocarlo y escribe el siguiente comando:
 git clone https://github.com/ivanmirandastavenuiter/ejercicios-programacion.git
 ```
 
-## Cómo solucionar fallos al actualizar
+## Cómo pintar una pirámide en java
 
-Recordamos cómo se actualizaba de **local** a **remoto**:
-
-```console
-git add . --all
-```
-```console
-git commit -m"Ejemplo de actualización"
-```
-```console
-git push
-```
-
-En algunos casos, la terminal nos indica fallo porque hay archivos en remoto
-que **no están en local**. Lo único que tendremos que hacer es introducir el siguiente comando:
-
-```console
-git pull
-```
+´´´public class Ejercicio19 {
+  public static void main(String[] args) {
+    System.out.println("Este programa pinta una pirámide en la pantalla.");
+    System.out.println("Si quieres ver la tuya, introduce la altura que quieres que tenga: ");
+    int altura = Integer.parseInt(System.console().readLine());
+    
+    System.out.println("Perfecto. Ahora pon el carácter que prefieras: ");
+    String c = System.console().readLine();
+    
+    int fila = 0;
+    
+    do {
+    
+      for (int espacio = altura - 1; espacio > 0; espacio--) {
+      System.out.print(" ");
+      }
+  
+      for (int i = fila; i > 0; i--) {
+        System.out.print(c);
+      }
+        System.out.println(c);
+      
+        fila += 2;  
+        altura--;
+        
+    } while (altura > 0);
+  }
+}
+´´´
 
 ## Qué se aprende en Programación
 
