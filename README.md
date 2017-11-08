@@ -20,7 +20,9 @@ git clone https://github.com/ivanmirandastavenuiter/ejercicios-programacion.git
 
 ## Cómo pintar una pirámide en java
 
-´´´public class Ejercicio19 {
+´´´
+
+public class Ejercicio19 {
   public static void main(String[] args) {
     System.out.println("Este programa pinta una pirámide en la pantalla.");
     System.out.println("Si quieres ver la tuya, introduce la altura que quieres que tenga: ");
@@ -48,6 +50,7 @@ git clone https://github.com/ivanmirandastavenuiter/ejercicios-programacion.git
     } while (altura > 0);
   }
 }
+
 ´´´
 
 ## Qué se aprende en Programación
