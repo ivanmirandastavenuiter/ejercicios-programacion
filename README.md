@@ -20,7 +20,7 @@ git clone https://github.com/ivanmirandastavenuiter/ejercicios-programacion.git
 
 ## Cómo pintar una pirámide en java
 
-´´´
+´´´java
 
 public class Ejercicio19 {
   public static void main(String[] args) {
