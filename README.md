@@ -20,7 +20,7 @@ git clone https://github.com/ivanmirandastavenuiter/ejercicios-programacion.git
 
 ## Cómo pintar una pirámide en java
 
-´´´
+```
 
 public class Ejercicio19 {
   public static void main(String[] args) {
@@ -50,8 +50,8 @@ public class Ejercicio19 {
     } while (altura > 0);
   }
 }
-
-´´´
+```
+**Recordad que para poner comentarios de código tenéis que introducir las tres comillas a principio y fin del tramo**
 
 ## Qué se aprende en Programación
 
