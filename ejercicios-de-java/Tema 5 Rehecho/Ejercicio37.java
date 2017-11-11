@@ -1,21 +1,10 @@
 /**
 * Ejercicio37
 * 
-* Escribe un programa que diga si un número introducido por teclado es o no
-* capicúa. Los números capicúa se leen igual hacia delante y hacia atrás. El
-* programa debe aceptar números de cualquier longitud siempre que lo permita
-* el tipo, en caso contrario el ejercicio no se dará por bueno. Se recomienda usar
-* long en lugar de int ya que el primero admite números más largos.
-
-* Ejemplo 1:
-
-* Por favor, introduzca un número entero positivo: 678
-* El 678 no es capicúa.
-
-* Ejemplo 2:
-
-* Por favor, introduzca un número entero positivo: 2019102
-* El 2019102 es capicúa.
+* Realiza un conversor del sistema decimal al sistema de “palotes”.
+* Ejemplo:
+* Por favor, introduzca un número entero positivo: 47021
+* El 470213 en decimal es el | | | | - | | | | | | | - - | | - | en el sistema de palotes.
 *
 * @author Iván Miranda Stavenuiter
 * 
@@ -23,13 +12,12 @@
 
 public class Ejercicio37 {
   public static void main(String[] args) {
-    
-    System.out.println("Este programa te dice si el número introducido es capicúa.");
+    System.out.println("Este programa convierte un número decimal a palotes.");
     System.out.println("Pon un número, de la longitud que quieras: ");
     long num = Integer.parseInt(System.console().readLine());
     System.out.println();
     
-    //Es simplemente voltear el número y comprobar si son iguales.
+    //El sistema lee de izquierda a derecha. Hay que voltearlo.
     
     long aux = 0;
     long volteado = 0;
@@ -42,32 +30,56 @@ public class Ejercicio37 {
       numAux /= 10;
     }
     
-    if (num == volteado) {
-      System.out.println("El número " + num + " es capicúa.");
-    } else {
-      System.out.println("Vaya, parece que ese número no es capicúa.");
+    //Una vez obtenido el número del revés, se hace módulo a módulo y se
+    //hace un bucle for, por ejemplo, en cada pasada, que reproduzca  
+    //tantos palotes como indique la cifra.
+    
+    long auxVolteado = 0;
+    
+    while (volteado > 0) {
+      
+      auxVolteado = volteado % 10;
+      
+      if (auxVolteado == 0) {
+        System.out.print("- ");
+      } else {
+        
+        for (int i = 0; i < auxVolteado; i++) {
+          
+          System.out.print("| ");
+        }
+    
+          if (volteado > 10) {
+            System.out.print("- ");
+          } else {
+            System.out.println();
+          }
+      }
+        volteado /= 10;
+      }
     }
   }
-}
+      
     
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+        
+       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
