@@ -36,7 +36,9 @@ public class Ejercicio37 {
     
     long auxVolteado = 0;
     
-    while (volteado > 0) {
+    System.out.println(volteado);
+    
+    do  {
       
       auxVolteado = volteado % 10;
       
@@ -56,7 +58,8 @@ public class Ejercicio37 {
           }
       }
         volteado /= 10;
-      }
+        
+      } while (volteado > 0);
     }
   }
       

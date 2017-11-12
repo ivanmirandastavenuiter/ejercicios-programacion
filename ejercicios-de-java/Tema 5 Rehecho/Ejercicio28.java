@@ -26,10 +26,10 @@ public class Ejercicio28 {
     
     int factorial = 1;
   
-    for (int i = 1; i < num; i++) {
+    for (int i = 1; i <= num; i++) {
       factorial *= i;
     }
     
-    System.out.println("El factorial de " + num + " es " + (factorial * num) + ".");
+    System.out.println("El factorial de " + num + " es " + (factorial ) + ".");
   }
 }
