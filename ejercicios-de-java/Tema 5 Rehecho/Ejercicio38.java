@@ -15,7 +15,7 @@
 public class Ejercicio38 {
   public static void main(String[] args) {
     
-    System.out.println("Este programa pinta una X en pantalla.");
+    System.out.println("Este programa pinta un reloj de arena en pantalla.");
     System.out.println("Introduce la altura, por favor: ");
     int alturaIntroducida = Integer.parseInt(System.console().readLine());
     System.out.println();
