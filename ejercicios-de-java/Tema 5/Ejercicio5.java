@@ -1,7 +1,9 @@
 /**
 * Ejercicio5
 * 
+*
 * @author Iván Miranda Stavenuiter
+* 
 */
 
 public class Ejercicio5 {
@@ -11,8 +13,9 @@ public class Ejercicio5 {
     
     while (i >= 160) {
       System.out.println(i);
-      i = i - 20;
+      i -= 20;
     }
   }
 }
+  
     

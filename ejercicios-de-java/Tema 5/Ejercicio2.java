@@ -1,7 +1,9 @@
 /**
 * Ejercicio2
 * 
+*
 * @author Iván Miranda Stavenuiter
+* 
 */
 
 public class Ejercicio2 {
@@ -9,10 +11,11 @@ public class Ejercicio2 {
     
     int i = 0;
     
-    while ((i < 100) && (i % 5 == 0)) {
+    while (i <= 100) {
       System.out.println(i);
-      i = i + 5;
+      i += 5;
     }
   }
 }
+  
     

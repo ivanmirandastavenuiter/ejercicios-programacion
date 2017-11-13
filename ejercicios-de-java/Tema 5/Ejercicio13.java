@@ -1,32 +1,31 @@
 /**
 * Ejercicio13
 * 
+*
 * @author Iván Miranda Stavenuiter
+* 
 */
 
 public class Ejercicio13 {
   public static void main(String[] args) {
-    System.out.println("Introduce números y te digo cuántos son positivos ");
-    System.out.println("y cuántos negativos: ");
+    System.out.println("Introduce diez números (positivos o negativos): ");
     
-    int preguntas = 0;
-    int npos = 0;
-    int nneg = 0;
-    int num;
+    int numNeg = 0;
+    int numPos = 0;
     
-    do { 
-      System.out.println("Introduce un número: ");
-      num = Integer.parseInt(System.console().readLine());
+    for (int i = 1; i < 11; i++) {
       
-      if (num < 0) {
-        nneg++;
-        preguntas++;
+      int numIntroducido = Integer.parseInt(System.console().readLine());
+      
+      if (numIntroducido < 0) {
+        numNeg++;
       } else {
-        npos++;
-        preguntas++;
+        numPos++;
       }
-    } while (preguntas < 10);
-      System.out.println("Has introducido " + nneg + " números negativos ");
-      System.out.println("y " + npos + " números positivos");
+    }
+    
+    System.out.println("Has introducido " + numNeg + " números negativos");
+    System.out.println("y " + numPos + " números positivos");
   }
 }
+        
