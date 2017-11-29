@@ -51,7 +51,7 @@ public class Ejercicio20 {
       
       for (int n = 0; n < relleno; n++) {
         
-        System.out.print("=");
+        System.out.print("=3");
       }
       
       System.out.print("*");
