@@ -32,16 +32,16 @@ public class Ejercicio22 {
     for (int i = 1; i < altura; i++) {
     
     // La posición de la cabeza (13) constituye el eje sobre el que colocar
-    // y el espacio lo fijamos en una variable a 12. A cada línea que avance,
+    // los asteriscos y el espacio lo fijamos en una variable a 12. A cada línea que avance,
     // el espacio tendrá que modificarse automáticamente en función del carácter
     // aleatorio con el que se encuentre. Por ejemplo, en el primer caso, 
     // si la posición incial es 13, la siguiente estará en 12, 13 o 14. 
-    // Esto quiere decir que el primer carácte susceptible de colocarse es 12
+    // Esto quiere decir que el primer carácter susceptible de colocarse es 12
     // y que los espacios tienen que ser como máximo de 11, es decir, 12 - 1,
     // e ir modificándose si salen otros números aleatorios. 
   
     // De este modo, si en el primer caso sale 0, los espacios se reducen 
-    // una unidad, alineándo los siguientes con este carácter.
+    // una unidad, alineando los siguientes con este carácter.
     
     // Y así con el resto.
   
