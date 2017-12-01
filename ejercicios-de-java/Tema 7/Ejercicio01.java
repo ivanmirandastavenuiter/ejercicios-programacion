@@ -24,5 +24,5 @@ public class Ejercicio01 {
   for (int i = 0; i < 12; i++) {
     System.out.println(num[i]);
    }
- }
+  }
 }
