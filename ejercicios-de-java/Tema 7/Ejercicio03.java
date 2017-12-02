@@ -24,6 +24,6 @@ public class Ejercicio03 {
   for (int i = 9; i >= 0; i--) {
     System.out.print(num[i] + " ");
   }
-}
+  }
 }
     
