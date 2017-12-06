@@ -81,7 +81,7 @@ public class Ejercicio14 {
     System.out.println("│\n└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘");
   System.out.println();
   
-  System.out.println("\nArray original:");
+  System.out.println("\nArray final:");
     System.out.println("\n┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐");
     for (int i = 0; i < 8; i++) {
       System.out.printf("│   %d    ", i);
