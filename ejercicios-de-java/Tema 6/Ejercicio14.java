@@ -65,7 +65,7 @@ public class Ejercicio14 {
        intentos--;
      } while ((intentos > 0) && (respuesta != 3));
      
-     if (intentos == 0) && (respuesta != 3)) {
+     if ((intentos == 0) && (respuesta != 3)) {
       System.out.println("Lo siento, has agotado tus intentos.");
     }
   }
