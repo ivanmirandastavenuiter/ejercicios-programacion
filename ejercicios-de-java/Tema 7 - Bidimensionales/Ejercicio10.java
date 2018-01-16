@@ -30,8 +30,7 @@ public class Ejercicio10 {
     int ordenadorX = 0;
     int ordenadorY = 0;
     int intentos = 0;
-    int ganadorUsuario;
-    int ganadorOrdenador;
+    
     
     System.out.println("   JUEGO TRES EN RAYA");
     System.out.println();
@@ -164,95 +163,77 @@ public class Ejercicio10 {
       System.out.print(a + "    ");
     }
     System.out.println();
-    
-    // Comprobación horizontal.
+   
+    int ganaUsuarioHorizontal = 0;
+    int ganaOrdenadorHorizontal = 0;
+    int ganaUsuarioVertical = 0;
+    int ganaOrdenadorVertical = 0;
+    int diagonalIzquierdaUsuario = 0;
+    int diagonalIzquierdaPC = 0;
+    int diagonalDerechaUsuario = 0;
+    int diagonalDerechaPC = 0;
+    int auxiliarY;
     
     for (int a = 0; a < 3; a++) {
-      ganadorUsuario = 0;
-      ganadorOrdenador = 0;
+      ganaUsuarioHorizontal = 0;
+      ganaOrdenadorHorizontal = 0;
       for (int b = 0; b < 3; b++) {
+        ganaUsuarioVertical = 0;
+        ganaOrdenadorVertical = 0;
+        diagonalIzquierdaUsuario = 0;
+        diagonalIzquierdaPC = 0;
+        diagonalDerechaUsuario = 0;
+        diagonalDerechaPC = 0;
+        auxiliarY = 2;
         switch (tablero[a][b]) {
             case " ☭ ":
-              ganadorUsuario++;
+              ganaUsuarioHorizontal++;
               break;
             case " ✝ ":
-              ganadorOrdenador++;
-              break;
+              ganaOrdenadorHorizontal++;
+              break;     
         }
-        if (ganadorUsuario == 3) {
+        for (int c = 0; c < 3; c++) {
+        switch (tablero[c][b]) {
+            case " ☭ ":
+              ganaUsuarioVertical++;
+              break;
+            case " ✝ ":
+              ganaOrdenadorVertical++;
+              break;     
+        }
+        }
+        for (int d = 0; d < 3; d++) {
+        switch (tablero[d][d]) {
+            case " ☭ ":
+              diagonalIzquierdaUsuario++;
+              break;
+            case " ✝ ":
+              diagonalIzquierdaPC++;
+              break;     
+        }
+        }
+        for (int d = 0; d < 3; d++) {
+        switch (tablero[d][auxiliarY]) {
+            case " ☭ ":
+              diagonalDerechaUsuario++;
+              break;
+            case " ✝ ":
+              diagonalDerechaPC++;
+              break;     
+        }
+        auxiliarY--;
+        }
+        if (ganaUsuarioHorizontal == 3 || ganaUsuarioVertical == 3 || diagonalIzquierdaUsuario == 3 || diagonalDerechaUsuario == 3)  {
           ganadorJugador = true;
-        } else if (ganadorOrdenador == 3) {
+        } else if (ganaOrdenadorHorizontal == 3 || ganaOrdenadorVertical == 3 || diagonalIzquierdaPC == 3 || diagonalDerechaPC == 3) {
           ganadorPC = true;
         } 
       }
     }
-    
-    // Comprobación vertical.
-    
-    for (int a = 0; a < 3; a++) {
-      ganadorUsuario = 0;
-      ganadorOrdenador = 0;
-      for (int b = 0; b < 3; b++) {
-        switch (tablero[b][a]) {
-            case " ☭ ":
-              ganadorUsuario++;
-              break;
-            case " ✝ ":
-              ganadorOrdenador++;
-              break;
-        }
-        if (ganadorUsuario == 3) {
-          ganadorJugador = true;
-        } else if (ganadorOrdenador == 3) {
-          ganadorPC = true;
-        } 
-      }
-    }
-    
-    // Diagonal hacia la derecha
-    
-    ganadorUsuario = 0;
-    ganadorOrdenador = 0;
-    for (int a = 0; a < 3; a++) {
-      switch (tablero[a][a]) {
-            case " ☭ ":
-              ganadorUsuario++;
-              break;
-            case " ✝ ":
-              ganadorOrdenador++;
-              break;
-      }
-        if (ganadorUsuario == 3) {
-          ganadorJugador = true;
-        } else if (ganadorOrdenador == 3) {
-          ganadorPC = true;
-        } 
-      }
-    
-    // Diagonal hacia la izquierda 
-    
-    ganadorUsuario = 0;
-    ganadorOrdenador = 0;
-    int b = 2;
-    for (int a = 0; a < 3; a++) { 
-      switch (tablero[a][b]) {
-            case " ☭ ":
-              ganadorUsuario++;
-              break;
-            case " ✝ ":
-              ganadorOrdenador++;
-              break;
-      }
-      if (ganadorUsuario == 3) {
-        ganadorJugador = true;
-      } else if (ganadorOrdenador == 3) {
-        ganadorPC = true;
-      } 
-      b--;
-     }
     } while (!ganadorPC && !completo && !ganadorJugador);
      
-     if (ganadorPC == ganadorJugador) {
+     if (ganadorPC == true && ganadorJugador == true) {
        System.out.println("Las fuerzas del bien y el mal terminan en empate.");
      } else if (ganadorPC && !ganadorJugador) {
        System.out.println("Parece que el ordenador te ha dejado calentito.");
