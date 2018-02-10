@@ -1,33 +1,74 @@
 /*
- * Definición de la clase Gato.
+ * Definición de la subclase Gato.
  */
-package poo;
+package ejercicio02;
 
 /**
  *
  * @author Iván Miranda
  */
-public class Gato extends Animal {
+public class Gato extends Mamifero {
   
-  String juguete;
+  // Definición de atributos.
   
-  public Gato (Sexo s) {
-    super(s);
-    juguete = "Bola de lana";
+  String raza;
+  String nombre;
+  
+  public Gato() {
+    super();
   }
   
-  public Gato (String a) {
-    super(Sexo.HEMBRA);
-    juguete = a;
+  public Gato (int altura, int peso, String especie, String raza) {
+    super(altura, peso, especie);
+    this.raza = raza;
   }
-  
-  @Override
-  public void juega() {
-    System.out.println("El gato está jugando en el jardín del chalet.");
+
+  public String getRaza() {
+    return raza;
   }
-  
+
+  public void setRaza(String raza) {
+    this.raza = raza;
+  }
+
   @Override
   public String toString() {
-    return super.toString() + "Juguete: " + this.juguete + "\n";
+    return super.toString() +
+     "Raza del gato: " + this.raza;
+  }
+  
+  @Override
+  public void come() {
+    System.out.println("El gato está comiendo del cazo.");
+  }
+  
+  @Override
+  public void bebe() {
+    System.out.println("El gato está bebiendo agua.");
+  }
+  
+  public void maulla() {
+    System.out.println("miaaaauuuuu muaaaaaa.");
+  }
+  
+  public Gato haParido() {
+    Gato cria = new Gato();
+    return cria;
+  }
+  
+  public int llamaRefuerzos() {
+    return (int)(Math.random() * 5 + 1);
+  }
+  
+  public void grita() {
+    System.out.println("jggggggggggghhhhhhh!!");
+  }
+  
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public String getNombre() {
+    return nombre;
   }
 }

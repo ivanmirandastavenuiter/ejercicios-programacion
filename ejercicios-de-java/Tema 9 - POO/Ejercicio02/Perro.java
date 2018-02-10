@@ -1,32 +1,56 @@
 /*
- * Definición de la clase Perro.
+ * Definición de la subclase Perro.
  */
-package poo;
+package ejercicio02;
 
 /**
  *
- * @author Iván Miranda
+ * @author Iván Miranda.
  */
-public class Perro extends Animal {
+public class Perro extends Mamifero {
   
-  public Perro (Sexo s, int p) {
-    super(s);
-    peso = p;
+  // Definición de atributos.
+  
+  String raza;
+  
+  public Perro(String raza) {
+    super();
+    this.raza = raza;
+  }
+  
+  public Perro (int altura, int peso, String especie, String raza) {
+    super(altura, peso, especie);
+    this.raza = raza;
   }
   
   public void ladra() {
-    System.out.println("guau guau!");
+    System.out.println("guauu guauu!!");
   }
   
+  public void persigue(Gato enemigo) {
+    int refuerzos = enemigo.llamaRefuerzos();
+    if (refuerzos >= 2) {
+    enemigo.grita();
+    System.out.println(enemigo.getNombre() + " ha llamado a unos colegas para defenderse"
+      + " y juntos han podido librarse del " + this.getRaza() + ".");
+    } else {
+      System.out.println("Solo ha podido venir " + refuerzos + " colegón/es.");
+      this.ladra();
+      System.out.println(enemigo.getNombre() + " se asusta y consigue escabullirse.");
+    }
+  }
+
+  public String getRaza() {
+    return raza;
+  }
+
+  public void setRaza(String raza) {
+    this.raza = raza;
+  }
+    
   @Override
   public String toString() {
-    return super.toString() + "Peso: " + this.peso + "\n";
-  }
-  
-  // Se usa override para modificar un método de la superclase Animal.
-  
-  @Override 
-  public void bebe() {
-    System.out.println("glup flup guau");
+    return super.toString() +
+      "Raza del perro: " + this.raza + "\n";
   }
 }

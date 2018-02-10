@@ -1,49 +1,86 @@
 /*
  * Definición de la superclase Animal.
  */
-package poo;
+package ejercicio02;
 
 /**
  *
- * @author Iván Miranda
+ * @author Iván Miranda.
  */
 public abstract class Animal {
   
-  private Sexo sexo;
+  // Declaración de atributos 
   
-  int peso;
-  int edad;
+  private int altura;
+  private int peso;
+  String sexo;
   String color;
   
-  // Constructor que introduce el sexo del animal.
-  
-  public Animal(Sexo s) {
-    this.sexo = s;
+  public Animal() {
+    this.sexo = "macho";
   }
   
-  // Get para extraer el sexo del animal.
-  
-  public Sexo getSexo() {
-    return this.sexo;
+  public Animal(String sexo) {
+    this.sexo = sexo;
   }
   
-  // Set para establecer el sexo del animal.
-  
-  public void setSexo(Sexo s) {
-    this.sexo = s;
+  public Animal(String sexo, int peso) {
+    this.sexo = sexo;
+    this.peso = peso;
   }
   
-  public String toString() {
-    return "Sexo: " + this.sexo + "\n";
+  public Animal(int altura, int peso) {
+    this.altura = altura;
+    this.peso = peso;
+  }
+
+  public int getAltura() {
+    return altura;
+  }
+
+  public int getPeso() {
+    return peso;
+  }
+
+  public String getSexo() {
+    return sexo;
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+  public void setAltura(int altura) {
+    this.altura = altura;
+  }
+
+  public void setPeso(int peso) {
+    this.peso = peso;
+  }
+
+  public void setSexo(String sexo) {
+    this.sexo = sexo;
+  }
+
+  public void setColor(String color) {
+    this.color = color;
   }
   
-  // Métodos de instancia comunes a la clase Animal.
-  
-  public void juega() {
-    System.out.println("Juega con la pelota.");
+  public void come() {
+    System.out.println("Ñamñamfdjfhjd");
   }
   
   public void bebe() {
-    System.out.println("glup glup");
+    System.out.println("glupglup");
+  }
+
+  @Override
+  public String toString() {
+    return "Características principales del animal:\n"
+      + "*****************************************\n"
+      + "Altura: " + this.altura + "\n"
+      + "Peso: " + this.peso + "\n"
+      + "Sexo: " + this.sexo + "\n"
+      + "Color: " + this.color + "\n";
   }
 }
